@@ -5,7 +5,8 @@
     <title>OGC概念图</title>
 </head>
 <body>
-<script src="https://unpkg.com/gojs@2.2.14/release/go.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/2.2.14/go.js"></script>
+<script src="ogcRelation.js"></script>
 <div id="allSampleContent" class="p-4 w-full">
     <script id="code">
         // This variation on ForceDirectedLayout does not move any selected Nodes
@@ -125,22 +126,7 @@
                 );
 
             // create the model for the concept map
-            var nodeDataArray = [
-                {key: 1, text: "geos"},
-                {key: 2, text: "postgis"},
-                {key: 3, text: "qgis"},
-                {key: 4, text: "gdal"},
-                {key: 5, text: "shapely"},
-                {key: 6, text: "jts"},
-                {key: 7, text: "geotols"}
-            ];
-            var linkDataArray = [
-                {from: 1, to: 2, text: "空间功能"},
-                {from: 1, to: 3, text: "空间功能"},
-                {from: 1, to: 4, text: "空间功能"},
-                {from: 1, to: 5, text: "空间功能"},
-                {from: 6, to: 7, text: "空间功能"}
-            ];
+
             myDiagram.model = new go.GraphLinksModel(nodeDataArray, linkDataArray);
         }
 
