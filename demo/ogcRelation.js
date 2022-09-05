@@ -13,7 +13,9 @@ const nodeDataArray = [
     {key: 9, text: "JSTS"},
     {key: 10, text: "R\nGEOS"},
     {key: 11, text: "rgeo"},
-    {key: 12, text: "GEO\nSwift"}
+    {key: 12, text: "GEO\nSwift"},
+    {key: 100, text: "sldeditor"},
+    {key: 101, text: "geostyler"}
 ];
 const linkDataArray = [
     {from: 1, to: 2, text: "空间功能"},
